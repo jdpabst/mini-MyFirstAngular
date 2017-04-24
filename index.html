@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="friendsList">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My First Angular Project</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+<body ng-controller="mainCtrl">
+    
+    <h1>My Friends</h1>
+      <div ng-repeat="friend in friends">
+          <p> {{ friend }} </p>
+          </div>
+
+          <br/>
+    <h2>New Friends</h2>
+       <input ng-model="name" type="text"/>
+       <button ng-click="addFriend()">Add a Friend</button>
+
+    <!--ORDER IS IMPORTANT HERE -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/mainCtrl.js"></script>
+
+
+
+</body>
+</html>
+
